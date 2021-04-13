@@ -1,13 +1,21 @@
 const az = `
-CEO
-Country Manager
-Operations
+Apple
+Banana
+Cake
 
+Sweet
+Acid
 
-ES
-EN
+require(' - ');
 
-separator:' - '
+=== 6 combinations ===
+Apple - Sweet
+Apple - Acid
+Banana - Sweet
+Banana - Acid
+Cake - Sweet
+Cake - Acid
+=== END ===
 `;
 
 const combinator = text => {

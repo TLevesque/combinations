@@ -1,35 +1,34 @@
-# duplicate-finder package
+# combinations package
 
-A very simple VS Code extension to identify duplicated lines.<br />
+TO DO...
 
-Select lines where you want to list the lines appearring twice or more, press Cmd+Alt+L and it will print bellow the duplicated lines.<br />
+A very simple VS Code extension to generate all possible combinations between lists of words.<br />
 
-It doesn't remove the duplicates, a lot of extensions are doing it well already.<br />
+Select lines where the lists you want to combine are and then press Cmd+Maj+P and select the command "Generate combinations".<br />
+
+Optional, you can add a separator by adding a line with "separator:" followed by the separator you want between brackets.<br />
 
 ### Example:
 
-List Duplicated line with Cmd+Alt+L or Ctrl+Alt+L:<br />
+By selecting this text:<br />
 
-abc<br />
-cbd<br />
-cbd<br />
-cde<br />
-cde<br />
-def<br />
+Apple<br />
+Banana<br />
+Cake<br />
 
-=> cbd<br />
-=> cde<br />
+Sweet<br />
+Acid<br />
+
+separator:' - '<br />
+
 <br />
+=> Will generate this:<br />
 
-List Duplicated line with Cmd+Alt+K or Ctrl+Alt+K:<br />
-
-abc<br />
-cbd<br />
-cbd<br />
-cde<br />
-cde<br />
-cde<br />
-def<br />
-
-=> cbd: 2<br />
-=> cde: 3<br />
+=== 6 combinations ===<br />
+Apple - Sweet<br />
+Apple - Acid<br />
+Banana - Sweet<br />
+Banana - Acid<br />
+Cake - Sweet<br />
+Cake - Acid<br />
+=== END ===<br />

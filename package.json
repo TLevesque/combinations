@@ -1,10 +1,10 @@
 {
-  "name": "duplicate-finder",
-  "displayName": "Find duplicate lines",
-  "description": "Identify and list duplicate lines",
-  "version": "0.0.1",
-  "publisher": "tlevesque",
-  "repository": "https://github.com/TLevesque/duplicate-finder.git",
+  "name": "combinations",
+  "displayName": "Combinations",
+  "description": "All possibles combinations from series of lists",
+  "version": "0.0.2",
+  "publisher": "tlevesque2",
+  "repository": "https://github.com/TLevesque/combinations.git",
   "engines": {
     "vscode": "^1.27.2"
   },
@@ -12,32 +12,21 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.findDuplicateLines",
-    "onCommand:extension.countDuplicateLines"
+    "onCommand:extension.combinations"
   ],
   "main": "./extension",
   "contributes": {
     "commands": [
       {
-        "command": "extension.findDuplicateLines",
-        "title": "Find and list duplicate lines"
-      },
-      {
-        "command": "extension.countDuplicateLines",
-        "title": "Find, list and count duplicate lines"
+        "command": "extension.combinations",
+        "title": "Combinations: Generate combinations"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.findDuplicateLines",
-        "key": "ctrl+alt+l",
-        "mac": "ctrl+alt+l",
-        "when": "editorTextFocus"
-      },
-      {
-        "command": "extension.countDuplicateLines",
-        "key": "ctrl+alt+k",
-        "mac": "ctrl+alt+k",
+        "command": "extension.combinations",
+        "key": "ctrl+alt+o",
+        "mac": "ctrl+alt+o",
         "when": "editorTextFocus"
       }
     ]
